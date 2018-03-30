@@ -1,4 +1,4 @@
-# Basic Concepts and Hello World
+# Basic Concepts and Hello, World
 
 In this small example, the implementation has some basic concepts:
 * Library
@@ -20,9 +20,9 @@ int main() {
 ```
 Always an implementation has the <span style="font-family:courier">main</span> function, this function will be executed first. She is <span style="font-family:courier">int</span> (integer) type, so it returned a integer.
 
-Now let's print the "Hello World" message. To do this, it's necessary to use the <span style="font-family:courier">printf</span> instruction:
+Now let's print the "Hello, World" message. To do this, it's necessary to use the <span style="font-family:courier">printf</span> instruction:
 ```c
-printf("Hello World\n");
+printf("Hello, World\n");
 ```
 The <span style="font-family:courier">printf</span> show the message on the screen and <span style="font-family:courier">\n</span> insert a new line. If you use two <span style="font-family:courier">printf</span> consecutive and don't use <span style="font-family:courier">\n</span>, then the two sentences will be displayed on the same line.
 
