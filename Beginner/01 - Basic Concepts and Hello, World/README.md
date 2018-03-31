@@ -2,7 +2,7 @@
 
 In this small example, the implementation has some basic concepts:
 * Library
-* Function
+* Main function
 * Print
 
 Usually all libraries are imported in the file header, in other words, are the first instructions of your file. When you want to use some library, you should use the <span style="font-family:courier">#include</span> instruction, e.g.:
