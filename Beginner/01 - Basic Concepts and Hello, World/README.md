@@ -56,6 +56,6 @@ You can check if your software has run completely. After running your software, 
 $ echo $?
 0
 ```
-If you print the same value if you insert in <span style="font-family:courier">return</span> instruction, is the signal that your software has run completely.
+If it print the same value if you insert in <span style="font-family:courier">return</span> instruction, is the signal that your software has run completely.
 
 <span style="font-family:courier"></span>
