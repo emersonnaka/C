@@ -28,11 +28,11 @@ The <span style="font-family:courier">printf</span> show the message on the scre
 
 Finally, the implementation was:
 ```c
-#include  <stdio.h>
+#include <stdio.h>
 
-int  main() {
+int main() {
 	printf("Hello, World!\n");
-	return  0;
+	return 0;
 }
 ```
 Note that at the end of each instruction has <span style="font-family:courier">;</span> (semicolon). If you don't insert them, it will give compilation error.
