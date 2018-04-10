@@ -59,3 +59,49 @@ int main() {
     return 0;
 }
 ```
+
+## Loops
+Loops are used when it necessary to execute some commands many times while a condition is true. In C, we have many ways to do a loop: `for`, `while` and `do while`
+
+### for
+The `for` instruction has 4 pieces: initialization, condition, change in the variable used in condition and instructions to be executed:
+```c
+for (initialization; condition; variable_change) {
+	instructions;
+}
+```
+Note initialization, conditions and change in the variable are separated by semicolons.
+* `Initialization`: assign a value to a variable;
+* `condition`: stop condition. For will be executed while this condition is true;
+* `variable_change`: change of the variable used in condition
+In this example [for.c](https://github.com/emersonnaka/C/blob/master/Beginner/03%20-%20Relational%20and%20Logical%20Operators%20and%20Loops/for.c), print `i` variable to understand how `for` works:
+```c
+#include  <stdio.h>
+
+int  main() {
+
+	int i;
+
+	for (i =  0; i <  10; i++) {
+		printf("%d\n", i);
+	}
+
+	return  0;
+}
+```
+The first step is the variable initialization, but it can't create a variable. Therefore the variable is created before. In this code, `i` initialized with 0. The condition to `for` be executed is while `i` less than 10. And increment `i` in 1 to each time the `for`  is executed.
+When this code is executed, had this output:
+```bash
+$ gcc for.c -o for
+$ ./for
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+```
