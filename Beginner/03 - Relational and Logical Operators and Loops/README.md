@@ -9,21 +9,21 @@ The relational operators are: less than `<`, less than or equal `<=`, equal `==`
 #include  <stdio.h>
 
 int  main() {
-	int left_value, right_value;
+    int left_value, right_value;
 
-	printf("Insert left value: ");
-	scanf("%d", &left_value);
-	printf("Insert right value: ");
-	scanf("%d", &right_value);
+    printf("Insert left value: ");
+    scanf("%d", &left_value);
+    printf("Insert right value: ");
+    scanf("%d", &right_value);
 
-	printf("%d less than %d: %d\n", left_value, right_value, left_value < right_value);
-	printf("%d less than or equal %d: %d\n", left_value, right_value, left_value <= right_value);
-	printf("%d equal %d: %d\n", left_value, right_value, left_value == right_value);
-	printf("%d not equal %d: %d\n", left_value, right_value, left_value != right_value);
-	printf("%d greater than or equal %d: %d\n", left_value, right_value, left_value >= right_value);
-	printf("%d greater than %d: %d\n", left_value, right_value, left_value > right_value);
+    printf("%d less than %d: %d\n", left_value, right_value, left_value < right_value);
+    printf("%d less than or equal %d: %d\n", left_value, right_value, left_value <= right_value);
+    printf("%d equal %d: %d\n", left_value, right_value, left_value == right_value);
+    printf("%d not equal %d: %d\n", left_value, right_value, left_value != right_value);
+    printf("%d greater than or equal %d: %d\n", left_value, right_value, left_value >= right_value);
+    printf("%d greater than %d: %d\n", left_value, right_value, left_value > right_value);
 
-	return  0;
+    return  0;
 }
 ```
 If you execute this code, you may observe that comparison argument (third `%d`) in each print only print 0 or 1. It occur because there isn't boolean type in C. For this, the programming language considers:
@@ -67,7 +67,7 @@ Loops are used when it necessary to execute some commands many times while a con
 The `for` instruction has 4 pieces: initialization, condition, change in the variable used in condition and instructions to be executed:
 ```c
 for (initialization; condition; variable_change) {
-	instructions;
+    instructions;
 }
 ```
 Note initialization, conditions and change in the variable are separated by semicolons.
@@ -80,13 +80,13 @@ In this example [for.c](https://github.com/emersonnaka/C/blob/master/Beginner/03
 
 int  main() {
 
-	int i;
+    int i;
 
-	for (i =  0; i <  10; i++) {
-		printf("%d\n", i);
-	}
+    for (i =  0; i <  10; i++) {
+        printf("%d\n", i);
+    }
 
-	return  0;
+    return  0;
 }
 ```
 The first step is the variable initialization, but it can't create a variable. Therefore the variable is created before. In this code, `i` initialized with 0. The condition to `for` be executed is while `i` less than 10. And increment `i` in 1 to each time the `for`  is executed.
