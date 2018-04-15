@@ -105,3 +105,29 @@ $ ./for
 8
 9
 ```
+Many students asking yourself when you use `for`. Basically, you should use it when you know exact amount  what loop will be executed.
+
+### while
+The `while` instruction only has the condition and instructions. Different from `for`, this loop don't initialize the variable and change it. `while` loop has following syntax:
+```c
+while (condition) {
+	instructions;
+}
+```
+The variable used in `condition`must be initialized previously and at the end of loop the variable used in `condition` must be updated by any instruction, else the loop will never end. In this example [while.c](https://github.com/emersonnaka/C/blob/master/Beginner/03%20-%20Relational%20and%20Logical%20Operators%20and%20Loops/while.c) we can see how to use `while` loop:
+```c
+#include <stdio.h>
+
+int main() {
+
+    int i = 0;
+
+    while (i < 10) {
+        printf("%d", i);
+        i++;
+    }
+
+    return 0;
+}
+```
+If execute this code, the output is the same [for.c](https://github.com/emersonnaka/C/blob/master/Beginner/03%20-%20Relational%20and%20Logical%20Operators%20and%20Loops/for.c) code.
