@@ -114,7 +114,7 @@ while (condition) {
 	instructions;
 }
 ```
-The variable used in `condition`must be initialized previously and at the end of loop the variable used in `condition` must be updated by any instruction, else the loop will never end. In this example [while.c](https://github.com/emersonnaka/C/blob/master/Beginner/03%20-%20Relational%20and%20Logical%20Operators%20and%20Loops/while.c) we can see how to use `while` loop:
+The variable used in `condition` must be initialized previously and at the end of loop the variable used in `condition` must be updated by any instruction, else the loop will never end. In this example [while.c](https://github.com/emersonnaka/C/blob/master/Beginner/03%20-%20Relational%20and%20Logical%20Operators%20and%20Loops/while.c) we can see how to use `while` loop:
 ```c
 #include <stdio.h>
 
@@ -131,3 +131,27 @@ int main() {
 }
 ```
 If execute this code, the output is the same [for.c](https://github.com/emersonnaka/C/blob/master/Beginner/03%20-%20Relational%20and%20Logical%20Operators%20and%20Loops/for.c) code.
+
+### do while
+Different from other loops `for` and `while`, `do while` instruction run at least one time. It has following syntax:
+```c
+do {
+	instructions;
+} while (condition);
+```
+As `while` instructions, the variable used in `condition` doesn't need to be initialized previously and at the end of loop the variable used in `condition` must be updated by any instruction, else the loop will never end. In this example [do_while.c](https://github.com/emersonnaka/C/blob/master/Beginner/03%20-%20Relational%20and%20Logical%20Operators%20and%20Loops/do_while.c), `do while` run while input number is even number:
+```c
+#include <stdio.h>
+
+int main() {
+
+    int i;
+
+    do {
+        scanf("%d", &i);
+        printf("Value: %d\n", i);
+    } while ((i % 2) == 0);
+
+    return 0;
+}
+```
