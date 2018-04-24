@@ -6,8 +6,8 @@ int main() {
 
     do {
         scanf("%d", &i);
-        printf("Value: %d", i);
-    } while (i != 10);
+        printf("Value: %d\n", i);
+    } while ((i % 2) == 0);
 
     return 0;
 }
