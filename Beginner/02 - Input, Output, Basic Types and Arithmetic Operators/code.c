@@ -7,6 +7,7 @@ int main() {
     int second_int_number, result;
     float float_number;
     float pi = 3.14;
+    char character = 'c';
 
     // Input keyboard and output data
     printf("Insert first integer number: ");
