@@ -5,25 +5,25 @@ There are many situations that we have to make decisions. For example, we want t
 `if` instruction has the following syntax:
 ```c
 if (condition) {
-	instructions;
+    instructions;
 }
 ```
 `if... else` instruction has the following syntax:
 ```c
 if (condition) {
-	instructions;
+    instructions;
 } else {
-	instructions;
+    instructions;
 }
 ```
 `if... else if... else` instruction has the following syntax:
 ```c
 if (condition) {
-	instructions;
+    instructions;
 } else if (other_condition) {
-	instructions;
+    instructions;
 } else {
-	instructions;
+    instructions;
 }
 ```
 It's possible to observe that any condition needs to be between parentheses. And as well as loops, the instructions needs to be in curly brackets, except if only **one** instruction.
@@ -34,18 +34,18 @@ So, now you can implement an algorithm to know a number is a even or odd number.
 
 int  main() {
 
-	int number, remainder;
+    int number, remainder;
 
-	scanf("%d", &number);
-	remainder = number %  2;
+    scanf("%d", &number);
+    remainder = number %  2;
 
-	if (remainder  ==  0) {
-		printf("%d is even\n", number);
-	} else {
-		printf("%d is odd\n", number);
-	}
+    if (remainder  ==  0) {
+        printf("%d is even\n", number);
+    } else {
+        printf("%d is odd\n", number);
+    }
 
-	return  0;
+    return  0;
 }
 ```
 Even or odd number is a simple example. It isn't necessary to use logic operator. But to show how to use relational and logical operators, we have leap year example.
@@ -59,18 +59,18 @@ The [leap_year_1.c](https://github.com/emersonnaka/C/blob/master/Beginner/04%20-
 
 int  main() {
  
-	int year;
-	scanf("%d", &year);
+    int year;
+    scanf("%d", &year);
 
-	if ((year %  4  ==  0) && (year %  100  !=  0)) {
-		printf("%d is leap year!\n", year);
-	} else  if ((year %  100  ==  0) && (year %  400  ==  0)) {
-		printf("%d is leap year!\n", year);
-	} else {
-		printf("%d is not leap year!\n", year);
-	}
+    if ((year %  4  ==  0) && (year %  100  !=  0)) {
+        printf("%d is leap year!\n", year);
+    } else  if ((year %  100  ==  0) && (year %  400  ==  0)) {
+        printf("%d is leap year!\n", year);
+    } else {
+        printf("%d is not leap year!\n", year);
+    }
 
-	return  0;
+    return  0;
 }
 ```
 Above it can be noted that two conditions are implemented separately. But it's possible implement in only one condition as [leap_year_2.c](https://github.com/emersonnaka/C/blob/master/Beginner/04%20-%20Decision%20Making/leap_year_2.c):
@@ -79,15 +79,15 @@ Above it can be noted that two conditions are implemented separately. But it's p
 
 int  main() {
 
-	int year;
-	scanf("%d", &year);
+    int year;
+    scanf("%d", &year);
 
-	if (((year %  4  ==  0) && (year %  100  !=  0)) || ((year %  100  ==  0) && (year %  400  ==  0))) {
-	printf("%d is leap year!\n", year);
-	} else {
-		printf("%d is not leap year!\n", year);
-	}
+    if (((year %  4  ==  0) && (year %  100  !=  0)) || ((year %  100  ==  0) && (year %  400  ==  0))) {
+        printf("%d is leap year!\n", year);
+    } else {
+        printf("%d is not leap year!\n", year);
+    }
  
-	return  0;
+    return  0;
 }
 ```
